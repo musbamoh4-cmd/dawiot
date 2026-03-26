@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoSpare Hub - User Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.5c4.7 0 8.5 3.8 8.5 8.5S16.7 19.5 12 19.5 3.5 15.7 3.5 11 7.3 2.5 12 2.5Z" />
+            <path d="M8 11.5c0-2.2 1.8-4 4-4 2.2 0 4 1.8 4 4s-1.8 4-4 4c-2.2 0-4-1.8-4-4Z" />
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title">AutoSpare Hub</div>
+          <div class="brand-sub">Management Suite</div>
+        </div>
+        <button class="ghost-x" aria-label="Collapse">×</button>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item" href="#">
+          <span class="nav-ico">
+            <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" /></svg>
+          </span>
+          Dashboard
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 6h16v4H4zM4 14h16v4H4z" /></svg></span>
+          Inventory
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7z" /></svg></span>
+          Inbound (GRN)
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M12 3 20 7v10l-8 4-8-4V7z" /></svg></span>
+          Outbound (STV)
+        </a>
+        <a class="nav-item" href="#">
+          <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M4 20h16v-2H4zm2-4h3V7H6zm5 0h3V4h-3zm5 0h3V10h-3z" /></svg></span>
+          Financial Reports
+        </a>
+        <a class="nav-item active" href="#">
+          <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0-0.001-8.001A4 4 0 0 0 12 12Zm-7 8a7 7 0 0 1 14 0v1H5v-1z" /></svg></span>
+          User Management
+          <span class="nav-arrow">›</span>
+        </a>
+      </nav>
+
+      <div class="support">
+        <div class="support-title">Contact & Support</div>
+        <div class="support-item">autosparehub.com</div>
+        <div class="support-item">@AutoSpareHub</div>
+      </div>
+
+      <button class="reset">Reset System</button>
+
+      <div class="user-card">
+        <div class="user-name">admin</div>
+        <div class="user-role">Admin</div>
+      </div>
+
+      <button class="signout">
+        <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M5 4h8v2H7v12h6v2H5zM13 7l5 5-5 5v-3H9v-4h4z" /></svg></span>
+        Sign Out
+      </button>
+    </aside>
+
+    <main class="main">
+      <header class="page-header">
+        <div>
+          <h1>User Management</h1>
+          <p>Manage staff access, roles, and audit trails.</p>
+        </div>
+        <button class="primary">
+          <span class="nav-ico"><svg viewBox="0 0 24 24"><path d="M11 4h2v6h6v2h-6v6h-2v-6H5v-2h6zM4 20h16v-2H4z" /></svg></span>
+          Add Staff User
+        </button>
+      </header>
+
+      <section class="card table-card">
+        <div class="table-head">
+          <div>User</div>
+          <div>Role</div>
+          <div>Created</div>
+          <div>Actions</div>
+        </div>
+        <div class="table-row">
+          <div class="user-cell">
+            <div class="avatar">A</div>
+            <div>
+              <div class="user-id">admin</div>
+              <div class="user-sub">manm0nnfwqyfr...</div>
+            </div>
+          </div>
+          <div><span class="pill">Admin</span></div>
+          <div class="muted">3/12/2026</div>
+          <div class="muted">Current session</div>
+        </div>
+      </section>
+
+      <section class="card info-card">
+        <div class="info-title">Role Permissions:</div>
+        <ul>
+          <li><strong>Admin:</strong> Full access including pricing, reporting, and user management.</li>
+          <li><strong>Staff:</strong> Can manage inventory, create GRNs and STVs, but cannot access financial reports or user management.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
